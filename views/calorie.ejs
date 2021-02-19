@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="./css/calorie_styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="./img/burger-icon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Palanquin&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="description" value="UCSD Smart Dining">
+    <title>Fill Calorie Form</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-logo">
+          <a href='./#index' title="Return to Smart Dining Services Homepage">
+              <img class="logo" src='./img/sdslogo.png' width="145" height="144" alt="Logo: SDS" />
+          </a>
+      </div>
+      <div class="header-section" role="navigation">
+          <a href='./#index'>
+              <div class="group">Smart Dining Services</div>
+              <div class="title">Calorie Filter</div>
+          </a>
+      </div>
+    </header>
+    <header>
+      <!--Navigation Bar-->
+      <b><div class="topnav">
+        <a href="./#index">Home</a>
+        <a href="./about">About Us</a>
+        <a class="active">Smart Dining Form</a>
+      </div></b>
+    </header>
+    <!--Box-->
+
+    <article>
+      <!--Search Low to High-->
+      <div class="search-container">
+        <form action="/dining" method="POST" enctype="application/x-www-form-urlencoded">
+          <input id="searchone" name="searchone" type="text" class="search" placeholder="Lower Bound">
+          <input id="searchtwo" name="searchtwo" type="text" class="search" placeholder="Upper Bound">
+          <br/>
+          <button type="submit" class="searchButton"><i class="fa fa-search"></i></button>
+        </form>    
+        <p class="instructions">Enter your desired calorie range in the fields above, and we will give you dietary recommendations based on your inputs!</p>
+      </div>
+    </article>
+
+    <!--Footer-->
+    <footer>
+      Any problems with the site? Feel free to <a class="address" href = "mailto: shungo.najima@gmail.com">email us!</a>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,223 @@
+/* Styling the entire page */
+body {
+    font-family: 'Palanquin', sans-serif;
+    background: url(../img/results_background.jpg);
+    background-size: 100%;
+    overflow: scroll; 
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+
+header, article {
+    margin: 25px;
+}
+
+/* Styling the nav bar */
+.topnav {
+    background-color: #e65700;
+    overflow: hidden;
+    border-radius: 20px;
+    margin-top: -30px;
+}
+
+/* Styling the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 16px;
+    font-size: 20px; 
+}
+
+.topnav a:hover {
+    background-color: #ffa01c;
+}
+
+.topnav a.active {
+    background-color: #ffa01c;
+    color: white;
+    text-align: center;
+}
+
+/* Styling for the footer and header */
+footer {
+    width: 100%;
+    background-color: #d4af37;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+
+header {
+    color: white;
+ }
+
+.group {
+    font-size: 25px;
+    line-height: 25px;
+}
+
+.title {
+    font-size: 40px;
+}
+
+.header-logo {
+    float: left;
+}
+
+.header-section {
+    padding-top: 35px;
+    float: left;
+    color: white;
+}
+
+.header-section a:link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.header-section a:visited {
+    color: #ffffff;
+}
+
+.header-section a:hover, .header-section a:active, .header-section a:focus {
+    color: #e65700;
+}
+
+.header-section a div {
+    display: block;
+    width: 100%;
+}
+
+/* Styling for the "email us" message at the bottom of screen */
+.address:link {
+    color: #e65700;
+    text-decoration: none;
+}
+
+.address:visited {
+    color: #e65700;
+}
+
+.address:hover, .address:active, .address:focus {
+    color: #870000;
+}
+
+.options {
+    color:white;
+    font-size: 45px;
+    text-align: center;
+    background-color: #e65700;
+    margin-bottom: 45px;
+    border-radius: 25px;
+}
+
+.content {
+    position: relative;
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    background-color: #f1f1f1;
+    margin-bottom: 15px;
+    border-radius: 25px;
+    font-size: 20px;
+}
+  
+  /* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.collapsible {
+    background-color: #00aab5;
+    color: white;
+    cursor: pointer;
+    padding: 20px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 25px;
+    margin-bottom: 10px;
+    border-radius: 25px;
+}
+  
+.active, .collapsible:hover {
+    background-color: #d4af37;
+    transition: background-color 0.3s ease-in-out;
+}
+  
+.collapsible:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+  
+.active:after {
+    content: "\2212";
+}
+
+/* TABLET compatibility */
+@media (max-width: 900px) {
+
+    footer {
+        font-size: 20px;
+    }
+
+    .options {
+        font-size: 35px;
+    }
+
+}
+  
+  /* MOBILE compatibility */
+  @media (max-width: 600px) {
+  
+    .header-logo {
+        float: none;
+        text-align: center;
+    }
+
+    .header-section {
+        text-align: center;
+        margin: auto;
+        float: none;
+    }
+
+    .topnav a {
+        font-size: 4vw;
+        padding: 2.2vw 2.6vw;
+    }
+
+    footer {
+        font-size: 4vw;
+    }
+  
+    .options {
+        font-size: 5vw;
+        margin-bottom: 5vw;
+    }
+
+    .collapsible {
+        font-size: 4vw;
+        padding: 3vw;
+        margin-bottom: 1vw;
+    }
+
+    .content {
+        font-size: 3vw;
+    }
+
+    .topnav {
+        margin-bottom: -4vw;
+    }
+
+  }
+  
